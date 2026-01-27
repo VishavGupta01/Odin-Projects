@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('fonts/Norsebold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    --odin-green: #596D48;
+    --input-border: #E5E7EB;
+    --focus-blue: #0ea5e9;
+    --error-red: #991b1b;
+    --bg-light: #f9fafb;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.left {
+    position: relative;
+    width: 40vw;
+    min-width: 500px;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#logo-bg {
+    margin-top: 15vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#logo {
+    height: 100px;
+}
+
+#logo-text {
+    font-family: 'Norse-Bold', 'Roboto';
+    font-size: 6rem;
+    color: white;
+}
+
+#bg-credit {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+#bg-credit a {
+    color: white;
+    text-decoration: underline;
+}
+
+.right {
+    flex: 1;
+    background-color: var(--bg-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.right-header {
+    padding: 0 50px;
+    max-width: 900px;
+}
+
+.right-header p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px 50px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 700px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-group label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #555;
+}
+
+.input-group input {
+    height: 30px;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: var(--focus-blue);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="password"]:invalid {
+    border-color: var(--error-red);
+    box-shadow: 0 0 3px rgba(153, 27, 27, 0.3);
+}
+
+.footer {
+    padding: 0 50px;
+}
+
+button[type="submit"] {
+    background-color: var(--odin-green);
+    color: white;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 13px 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
+
+.login-ling {
+    font-size: 1rem;
+}
+
+.login-link a{
+    color: var(--odin-green);
+    text-decoration: none;
+    font-weight: 700;
+}
