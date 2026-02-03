@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Library</h1>
+    <form id="bookForm">
+        <label for="title">Title</label>
+        <input id="title" type="text" name="title">
+
+        <label for="author">Author</label>
+        <input id="author" type="text" name="author">
+
+        <label for="year">Year of Publication</label>
+        <input id="year" type="number" name="year" min="0" max="2026">
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <div id="Library">
+        <h2>Current Library</h2>
+        <div id="libraryDisplay"></div>
+    </div>
+</body>
+</html>

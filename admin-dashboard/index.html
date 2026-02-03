@@ -5,9 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="icons/dashboard-variant.svg" alt="">
+                <span>Dashboard</span>
+            </div>
+            <nav class="nav-group">
+                <a href="#"><img src="icons/home.svg" alt=""> Home</a>
+                <a href="#"><img src="icons/account.svg" alt=""> Profile</a>
+                <a href="#"><img src="icons/message.svg" alt=""> Messages</a>
+                <a href="#"><img src="icons/history.svg" alt=""> History</a>
+                <a href="#"><img src="icons/file-multiple.svg" alt=""> Tasks</a>
+                <a href="#"><img src="icons/account-group.svg" alt=""> Communities</a>
+            </nav>
+            <nav class="nav-group secondary">
+                <a href="#"><img src="icons/cog.svg" alt=""> Settings</a>
+                <a href="#"><img src="icons/help-box.svg" alt=""> Support</a>
+                <a href="#"><img src="icons/shield-check.svg" alt=""> Privacy</a>
+            </nav>
+        </aside>
 
+        <main class="main-content">
+            <header class="header">
+                <div class="header-top">
+                    <div class="search-bar">
+                        <img src="icons/magnify.svg" alt="">
+                        <input type="text">
+                    </div>
+                    <div class="user-info-small">
+                        <img src="icons/bell-ring.svg" alt="Notifications">
+                        <img src="images/avatar.png" class="avatar" alt="">
+                        <span class="user-name">Morgan Oakley</span>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="greeting">
+                        <img src="images/avatar.png" class="avatar-large" alt="">
+                        <div>
+                            <p>Hi there,</p>
+                            <h1>Morgan Oakley (@morgan)</h1>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button class="btn">New</button>
+                        <button class="btn">Upload</button>
+                        <button class="btn">Share</button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                <section class="projects">
+                    <h3>Your Projects</h3>
+                    <div class="project-cards">
+                        <div class="card">
+                            <div class="card-accent"></div>
+                            <div class="card-content">
+                                <h4>Super Cool Project</h4>
+                                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                                <div class="card-icons">
+                                    <img src="icons/star-plus.svg" alt="">
+                                    <img src="icons/eye-plus.svg" alt="">
+                                    <img src="icons/source-fork.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                </section>
+
+                <aside class="widgets">
+                    <div class="announcements">
+                        <h3>Announcements</h3>
+                        <div class="widget-card">
+                            <div class="item">
+                                <h5>Site Maintenance</h5>
+                                <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac...</p>
+                            </div>
+                            <div class="item">
+                                <h5>Community Share Day</h5>
+                                <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trending">
+                        <h3>Trending</h3>
+                        <div class="widget-card">
+                            <div class="trend-item">
+                                <img src="images/tegan.png" alt="">
+                                <div><p class="handle">@tegan</p><p class="sub">World Peace Builder</p></div>
+                            </div>
+                            </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
